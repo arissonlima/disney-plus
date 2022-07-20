@@ -131,15 +131,7 @@ async function getMovieData(movieId) {
 }
 
 function loadMovies() {
-  const LIST_MOVIES = [
-    "tt14111726",
-    "tt11671006",
-    "tt0356150",
-    "tt10127708",
-    "tt0425112",
-    "tt3794354",
-    "tt0381707",
-  ];
+  const LIST_MOVIES = ["tt14111726", "tt11671006", "tt0356150", "tt10127708"];
 
   LIST_MOVIES.map(async (movie, index) => {
     const movieData = await getMovieData(movie);
